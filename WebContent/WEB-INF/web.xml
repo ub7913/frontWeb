@@ -7,7 +7,7 @@
   
   	<servlet>
    		<servlet-name>front</servlet-name>
-    	<servlet-class>com.dev.controller.FrontController</servlet-class>
+    	<servlet-class>com.dev.common.FrontController</servlet-class>
     <init-param>
     	<param-name>charset</param-name>
     	<param-value>UTF-8</param-value>
@@ -24,7 +24,7 @@
     </filter>
     <filter-mapping>
     	<filter-name>sitemesh</filter-name>
-    	<url-pattern>/*</url-pattern>
+    	<url-pattern>/*</url-pattern><!-- 모든 파일에 대해 사이트메쉬 걸림 *.do하면 do서블릿만, *.jsp하면 jsp페이지만 사이트 메쉬 걸림 -->
     </filter-mapping>
 
 </web-app>

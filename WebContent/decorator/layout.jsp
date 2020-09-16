@@ -4,6 +4,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- sitemesh에 부트스트랩 걸어주기 , style위에서 하기 -->
+
 <style>
 * {
   box-sizing: border-box;
@@ -130,16 +134,17 @@ body {
 
 <div class="row">
   <div class="leftcolumn">
-    <div class="card">
+    
+    <decorator:body/>
+  </div>
+  <div class="rightcolumn">
+  	<div class="card">
       <h2>TITLE HEADING</h2>
       <h5>Title description, Sep 2, 2017</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
-  </div>
-  <div class="rightcolumn">
-  	<decorator:body/>
   </div>
 </div>
 
